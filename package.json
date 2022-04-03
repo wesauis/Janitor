@@ -1,0 +1,30 @@
+{
+  "name": "janitor",
+  "displayName": "Janitor",
+  "version": "0.0.1",
+  "description": "cleanup unused stuff and more!",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node .",
+    "build": "esbuild src/index.ts --bundle --format=cjs --platform=node --outdir=build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesauis/Janitor.git"
+  },
+  "author": "Wesley Augusto Isotton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wesauis/Janitor/issues"
+  },
+  "homepage": "https://github.com/wesauis/Janitor#readme",
+  "dependencies": {
+    "commander": "^9.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.181",
+    "@types/node": "^17.0.23",
+    "esbuild": "^0.14.30"
+  }
+}
